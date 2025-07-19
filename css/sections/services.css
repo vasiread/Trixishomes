@@ -1,0 +1,138 @@
+#services {
+
+    max-width: 75%;
+    width: 100%;
+    min-height: 735px;
+    height: auto;
+    margin: 0px 12.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-header {
+    color: rgba(33, 62, 77, 1);
+    font-size: 42px;
+    font-family: "Belleza";
+    font-weight: 400;
+    margin: 0;
+}
+
+.services-description {
+    max-width: 50.48%;
+    width: 100%;
+    text-align: center;
+    font-family: "Geist";
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.offer-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+    margin: 60px 0;
+}
+
+.offer-box {
+    background-color: rgba(248, 248, 248, 1);
+    border-radius: 2rem;
+    height: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.offer-box:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offer-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.offer-boxinsidecontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.logo-offer-box {
+    background-color: rgba(205, 96, 36, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo-offer-box img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.logo-offer-box img {
+    position: absolute;
+    top: 27%;
+    left: 27%;
+
+}
+
+.offer-boxinsidecontent h2 {
+    font-family: "Belleza";
+    font-weight: 400;
+    font-size: 26px;
+
+    line-height: 28.6px;
+    color: rgba(44, 44, 44, 1);
+    text-align: left;
+    margin: 0;
+}
+
+.offer-boxinsidecontent p {
+    color: rgba(44, 44, 44, 1);
+    font-family: "Geist";
+    font-weight: 300;
+
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    margin: 0;
+
+}
+
+
+
+@media(max-width:1220px) {
+    .offer-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:780px) {
+    .offer-items {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}

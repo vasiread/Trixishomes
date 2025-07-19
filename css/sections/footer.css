@@ -1,0 +1,28 @@
+#footer {
+    height: 618px;
+    max-width: 100%;
+     background: rgba(33, 62, 77, 1);
+    margin-top: 540px;
+    padding: 98px 4.16%;
+ }
+
+ #footer img{
+    width:100%
+ }
+ 
+
+.footerfirstsection {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+ }
+
+.footer-logo-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-self: flex-start;
+    gap: 1rem;
+    max-width: 15.10%;
+    width: 100%;
+}

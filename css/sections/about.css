@@ -1,0 +1,245 @@
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+#about {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    gap: 12px;
+}
+
+.about-header {
+    font-family: "Belleza";
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgba(33, 62, 77, 1);
+    margin: 0;
+
+}
+
+.about-description {
+    font-family: "Geist";
+    font-weight: 300;
+    font-style: Light;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+
+
+}
+
+.img-container-about {
+    max-width: 75%;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.img-container-about img {
+    object-fit: contain;
+    width: 100%;
+
+
+}
+
+.cards-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2%;
+    max-width: 48.75%;
+    width: 100%;
+
+
+}
+
+.card-parts {
+    background-color: rgba(243, 243, 243, 1);
+    height: 465px;
+    max-width: 50%;
+    width: 100%;
+    background-color: rgba(243, 243, 243, 1);
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.card-parts-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.card-parts h3 {
+    margin: 0;
+    color: rgba(44, 44, 44, 1);
+    font-weight: 600;
+    font-family: "Geist";
+    font-size: 26px;
+}
+
+.card-parts p,
+.card-parts-list li {
+    margin: 0;
+    font-family: "Geist";
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(44, 44, 44, 1);
+}
+
+.card-parts img {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+.about-networth {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5%;
+    padding: 23px 0;
+}
+
+.about-networth p {
+    font-family: "Geist";
+    font-weight: 300;
+    font-size: 1rem;
+
+    color: rgba(44, 44, 44, 1);
+}
+
+.about-networth div h4 {
+    color: rgba(44, 44, 44, 1);
+    font-family: "Belleza";
+    margin: 0;
+    font-weight: 400;
+    font-size: 48px;
+
+}
+
+.about-networth sup {
+    margin-left: -9px;
+
+}
+
+.about-networth div {}
+
+
+.profiles-about {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.profiles-about h3 {
+    margin: 0;
+    font-family: "Belleza";
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    text-align: center;
+    color: rgba(33, 62, 77, 1);
+}
+
+.individual-profiles-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 17.70%;
+    width: 100%;
+
+}
+
+.individual-profiles-about p {
+    margin: 0;
+    margin: 0.2rem 0;
+    /* color:rgba(136, 136, 136, 1);
+    font-size: 1rem;
+    font-weight:300;
+     */
+     text-align: left;
+
+}
+
+.individual-profiles-about img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.profile-name {
+    color: rgba(44, 44, 44, 1);
+    font-family: "Geist";
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    margin-bottom: 0.3rem;
+}
+
+.prfile-description {
+    font-family: "Geist";
+    font-weight: 300;
+
+    color: rgba(136, 136, 136, 1);
+}
+
+.marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    /* background-color: red; */
+}
+
+.profiles-marquee {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-marquee 15s linear infinite;
+    /* position: relative; */
+    /* Ensure it keeps going and wraps properly */
+    /* width: max-content; */
+    /* overflow: hidden; */
+}
+
+.individual-profiles-about {
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+}
+
+@media(max-width:1200px) {
+    .cards-about {
+        flex-direction: column;
+        height: fit-content;
+        gap: 2rem;
+    }
+
+    .card-parts {
+        height: 465px;
+        max-width: 100%;
+
+    }
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-30%);
+    }
+}
