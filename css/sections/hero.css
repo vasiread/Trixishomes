@@ -4,19 +4,32 @@
     max-width: 93.75%;
     width: 100%;
     margin: 0 3.1%;
-}
+    margin-top: 200px;
 
+}
+.rightsidesection-herocategorize li.active {
+    border-bottom: 2px solid rgb(51, 50, 50);
+    
+}
+#categoryList{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+}
 #rightside-description-hero {
     margin: 0;
     color: rgba(0, 0, 0, 1);
     font-weight: 300;
-    font-size: 18px;
+font-size: clamp(12px, 2vw, 18px);
     font-family: "Geist";
+    margin-top: 10px;
+
 
 }
 
 .leftsidesection-hero {
-     width: 100%;
+    width: 100%;
     max-width: 60.91%;
     padding: 0 40px 2.2%;
     display: flex;
@@ -26,57 +39,69 @@
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
-    height:1053px;
+    height: 1053px;
     overflow-y: scroll;
     /* IE/Edge */
 }
-.rightsidesection-herocategorize{
+
+.rightsidesection-herocategorize {
     display: flex;
     gap: 6.7%;
     width: 100%;
     margin-top: 100px;
+    
 
 
 }
-.rightsidesection-herocategorize li{
+
+.rightsidesection-herocategorize li {
     font-family: "Belleza";
-        font-weight: 400;
-        font-size: 12px;
-        list-style: none;
-        color:rgba(33, 62, 77, 1);
-       
+    font-weight: 400;
+    font-size: 12px;
+    list-style: none;
+    color: rgba(33, 62, 77, 1);
+    cursor:pointer;
+
 }
-.rightsidesection-searchbar{
+
+.rightsidesection-searchbar {
     height: 60px;
     width: 100%;
-    position:relative;
+    position: relative;
     margin: 10px 0;
 
 }
-.rightsidesection-searchbar button{
+
+.rightsidesection-searchbar button {
     background-color: rgba(205, 96, 36, 1);
-    position:absolute;
-    top:0;
-    right: 0;
+    position: absolute;
+    top: 0;
+    right: -10%;
     height: 100%;
     width: 60px;
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
     border-radius: 10px;
 
 }
-.rightsidesection-searchbar input{
-    height:100%;
+
+.rightsidesection-searchbar input {
+    height: 48%;
     width: 100%;
-    border:none;
+    border: none;
     border-radius: 8px;
     background-color: rgba(248, 248, 248, 1);
+        padding: 16px 20px;
+        font-family: "Geist";
+        color:rgb(71, 70, 70);
+        font-size: 1rem;
+        position:relative;
+
 }
 
 
-.rightsidesection-searchbar input::placeholder{
-    color:rgba(0, 0, 0, 1);
-    padding: 16px 20px;
+.rightsidesection-searchbar input::placeholder {
+    color: rgba(0, 0, 0, 1);
     font-family: "Geist";
 }
 
@@ -149,8 +174,9 @@
     color: rgba(33, 62, 77, 1);
     font-weight: 400;
     font-family: "Bellaza";
-    font-size: 64px;
+    /* font-size: 64px; */
     width: 100%;
+font-size: clamp(24px, 5vw, 64px);
 
 }
 
@@ -164,10 +190,20 @@
     }
 }
 
+
 @media (max-width: 1200px) {
     .leftsidesection-hero {
-        max-width: 30%;
-        background-color: red;
+        max-width: 100%;
         width: 100%;
+        padding: 0;
+    }
+
+    #herosection {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .rightsidesection-hero {
+        max-width: 100%;
     }
 }

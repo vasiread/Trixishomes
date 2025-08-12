@@ -1,5 +1,4 @@
 #services {
-
     max-width: 75%;
     width: 100%;
     min-height: 735px;
@@ -12,20 +11,22 @@
 
 .services-header {
     color: rgba(33, 62, 77, 1);
-    font-size: 42px;
+    font-size: clamp(26px, 4vw, 42px);
     font-family: "Belleza";
     font-weight: 400;
     margin: 0;
+    text-align: center;
 }
 
 .services-description {
-    max-width: 50.48%;
+    max-width: 100%;
     width: 100%;
     text-align: center;
     font-family: "Geist";
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.1rem);
     font-weight: 300;
     margin: 1rem 0;
+    color: rgba(44, 44, 44, 1);
 }
 
 .offer-items {
@@ -88,22 +89,15 @@
 .logo-offer-box img {
     width: 24px;
     height: 24px;
-}
-
-
-
-.logo-offer-box img {
     position: absolute;
     top: 27%;
     left: 27%;
-
 }
 
 .offer-boxinsidecontent h2 {
     font-family: "Belleza";
     font-weight: 400;
-    font-size: 26px;
-
+    font-size: clamp(20px, 2vw, 26px);
     line-height: 28.6px;
     color: rgba(44, 44, 44, 1);
     text-align: left;
@@ -114,23 +108,20 @@
     color: rgba(44, 44, 44, 1);
     font-family: "Geist";
     font-weight: 300;
-
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
     line-height: 27px;
     text-align: left;
     margin: 0;
-
 }
 
-
-
-@media(max-width:1220px) {
+/* Responsiveness */
+@media (max-width: 1220px) {
     .offer-items {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(max-width:780px) {
+@media (max-width: 780px) {
     .offer-items {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;

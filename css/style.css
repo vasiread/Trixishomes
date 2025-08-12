@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('sections/header.css');
 @import url('sections/hero.css');
+@import url('sections/propertyfound.css');
 @import url('sections/services.css');
 @import url('sections/properties.css');
 @import url('sections/about.css');
+@import url('sections/categories.css');
+@import url('sections/testimonial.css');
 @import url('sections/footer.css');
 
 
@@ -15,6 +18,9 @@
 } */
 
 .parent-container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 12rem;

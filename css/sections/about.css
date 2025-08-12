@@ -1,10 +1,14 @@
+/* =======================
+   Base Layout
+========================== */
+
 html,
 body {
     width: 100%;
     overflow-x: hidden;
 }
-#about {
 
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +17,17 @@ body {
     gap: 12px;
 }
 
+/* =======================
+   Headings & Descriptions
+========================== */
+
 .about-header {
     font-family: "Belleza";
     font-weight: 400;
     font-size: 2rem;
     color: rgba(33, 62, 77, 1);
     margin: 0;
-
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .about-description {
@@ -29,9 +37,12 @@ body {
     font-size: 1rem;
     text-align: center;
     margin: 0;
-
-
+    animation: fadeInUp 0.8s ease-out forwards;
 }
+
+/* =======================
+   Image Container
+========================== */
 
 .img-container-about {
     max-width: 75%;
@@ -42,9 +53,11 @@ body {
 .img-container-about img {
     object-fit: contain;
     width: 100%;
-
-
 }
+
+/* =======================
+   Cards Section
+========================== */
 
 .cards-about {
     display: flex;
@@ -53,30 +66,30 @@ body {
     gap: 1.2%;
     max-width: 48.75%;
     width: 100%;
-
-
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .card-parts {
     background-color: rgba(243, 243, 243, 1);
-    height: 465px;
+    height: 487px;
     max-width: 50%;
     width: 100%;
-    background-color: rgba(243, 243, 243, 1);
     padding: 0.9rem 2rem;
     border-radius: 2rem;
     display: flex;
-    gap: 20px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#card-parts-mission{
+    height: fit-content;
 }
 
-.card-parts-list {
-    margin: 0;
-    padding: 0;
-    padding-left: 1rem;
+.card-parts:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .card-parts h3 {
@@ -102,21 +115,37 @@ body {
     padding: 0.8rem;
 }
 
+.card-parts-list {
+    margin: 0;
+    padding: 0 0 0 1rem;
+    height: fit-content;
+}
+
+/* =======================
+   About Net Worth Section
+========================== */
+
 .about-networth {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.5%;
     max-width: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 7.5%;
     padding: 23px 0;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.about-networth div {
+    place-items: center;
 }
 
 .about-networth p {
     font-family: "Geist";
     font-weight: 300;
     font-size: 1rem;
-
     color: rgba(44, 44, 44, 1);
 }
 
@@ -126,22 +155,22 @@ body {
     margin: 0;
     font-weight: 400;
     font-size: 48px;
-
 }
 
 .about-networth sup {
     margin-left: -9px;
-
 }
 
-.about-networth div {}
-
+/* =======================
+   Profiles Section
+========================== */
 
 .profiles-about {
     margin: 80px 0;
     display: flex;
     flex-direction: column;
     gap: 65px;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .profiles-about h3 {
@@ -149,7 +178,6 @@ body {
     font-family: "Belleza";
     font-weight: 400;
     font-size: 1.1rem;
-
     text-align: center;
     color: rgba(33, 62, 77, 1);
 }
@@ -157,26 +185,23 @@ body {
 .individual-profiles-about {
     display: flex;
     flex-direction: column;
-    max-width: 17.70%;
+    max-width: 17.7%;
     width: 100%;
-
-}
-
-.individual-profiles-about p {
-    margin: 0;
-    margin: 0.2rem 0;
-    /* color:rgba(136, 136, 136, 1);
-    font-size: 1rem;
-    font-weight:300;
-     */
-     text-align: left;
-
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
 }
 
 .individual-profiles-about img {
     max-width: 100%;
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.individual-profiles-about p {
+    margin: 0.2rem 0;
+    text-align: left;
 }
 
 .profile-name {
@@ -184,16 +209,18 @@ body {
     font-family: "Geist";
     font-weight: 600;
     font-size: 1.1rem;
-
     margin-bottom: 0.3rem;
 }
 
 .prfile-description {
     font-family: "Geist";
     font-weight: 300;
-
     color: rgba(136, 136, 136, 1);
 }
+
+/* =======================
+   Marquee Animation
+========================== */
 
 .marquee-wrapper {
     overflow: hidden;
@@ -201,37 +228,12 @@ body {
     position: relative;
     display: flex;
     gap: 2rem;
-    /* background-color: red; */
 }
 
 .profiles-marquee {
     display: flex;
     gap: 2rem;
     animation: scroll-marquee 15s linear infinite;
-    /* position: relative; */
-    /* Ensure it keeps going and wraps properly */
-    /* width: max-content; */
-    /* overflow: hidden; */
-}
-
-.individual-profiles-about {
-    flex-shrink: 0;
-    width: 200px;
-    text-align: center;
-}
-
-@media(max-width:1200px) {
-    .cards-about {
-        flex-direction: column;
-        height: fit-content;
-        gap: 2rem;
-    }
-
-    .card-parts {
-        height: 465px;
-        max-width: 100%;
-
-    }
 }
 
 @keyframes scroll-marquee {
@@ -242,4 +244,62 @@ body {
     100% {
         transform: translateX(-30%);
     }
+}
+
+/* =======================
+   Global Animation
+========================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =======================
+   Responsive Design
+========================== */
+
+@media (max-width: 1200px) {
+    .cards-about {
+        flex-direction: column;
+        height: fit-content;
+        gap: 2rem;
+        max-width: 80%;
+    }
+
+    .card-parts {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-networth {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-about {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-networth {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-about {
+        max-width: 90%;
+    }
+        .img-container-about {
+            max-width: 94%;
+             
+            margin: 70px 0;
+        }
 }

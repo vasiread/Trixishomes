@@ -1,0 +1,223 @@
+#testimonials {
+    max-width: 77.44%;
+    width: 100%;
+    margin: 0 10.98%;
+}
+
+
+#testimonial-header {
+    margin: 0;
+    font-family: "Belleza";
+    font-weight: 400;
+    color: rgba(33, 62, 77, 1);
+    text-align: center;
+    font-size: clamp(24px, 3.2vw, 36px);
+}
+
+.testimonial-videosection {
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    position: relative;
+    max-width: 22.86%;
+    width: 100%;
+
+}
+
+#play-icon {
+    position: absolute;
+    top: 12.6vw;
+    left: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+
+}
+
+.testimonial-videosection #video-image {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+
+.videodescription-testimonial {
+    display: flex;
+    flex-direction: column;
+    /* gap: 36px; */
+}
+
+.videodescription-testimonial p:first-child {
+    font-family: "Geist";
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(44, 44, 44, 1);
+    margin: 0;
+
+}
+
+.videodescription-testimonial p:nth-child(2) {
+    font-family: "Geist";
+    font-weight: 300;
+
+    font-size: 1rem;
+    color: rgba(136, 136, 136, 1);
+    margin: 0;
+    margin-top: 5px;
+
+}
+
+.testimonial-profiles {
+    /* width: max-content; */
+    max-width: 42%;
+    /* override the 42.2% */
+    display: flex;
+    gap: 5.7%;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.profile-view {
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.profile-view .profile-name {
+    font-family: "Geist";
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(44, 44, 44, 1);
+}
+
+.profile-view .profile-designation {
+    color: rgba(136, 136, 136, 1);
+    font-family: "Geist";
+    font-size: 1rem;
+}
+
+.individual-testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+    min-width: 47.12%;
+    width: 100%;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 2rem;
+    padding: 2rem;
+    /* gap: 12px; */
+    flex-shrink: 0;
+}
+
+.arrow-container {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 24px;
+}
+
+.testimonial-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    /* This hides overflowing content while scrolling */
+    position: relative;
+}
+
+.arrow-container img {
+    width: 30px;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+#testimonial-description {
+    margin: 0;
+    color: rgba(44, 44, 44, 1);
+    font-family: "Geist";
+    font-weight: 300;
+    font-size: 1rem;
+
+
+}
+
+.profile-view img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: contain;
+
+}
+
+.profile-detail p {
+    margin: 0;
+}
+
+.testimonial-section {
+    display: flex;
+    gap: 6.87%;
+    align-items: center;
+    flex-direction: center;
+    position: relative;
+}
+
+@media(max-width:1200px) {
+    .testimonial-section {
+        flex-direction: column;
+    }
+
+    .testimonial-videosection {
+        max-width: 40%;
+
+    }
+
+    .arrow-container {
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width: 1020px) {
+    .testimonial-profiles {
+
+        min-width: 90%;
+    }
+
+}
+
+@media(max-width: 720px) {
+    
+    .testimonial-profiles {
+        display: flex;
+        gap: 5.7%;
+        /* width: max-content; */
+        /* Ensures it grows based on its children */
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+   
+
+    .testimonial-videosection {
+        max-width: 50%;
+
+    }
+
+    .individual-testimonials {
+        scroll-snap-align: start;
+        min-width: 90%;
+        flex-shrink: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .testimonial-videosection {
+        max-width: 70%;
+
+    }
+
+}

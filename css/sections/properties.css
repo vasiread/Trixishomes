@@ -7,13 +7,15 @@
 
 
 }
-.parent-properties{
+
+.parent-properties {
     display: flex;
     max-width: 86.58%;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
+
 #properties-header {
     color: rgba(33, 62, 77, 1);
     font-family: "Belleza";
@@ -30,23 +32,26 @@
     width: 100%;
     max-width: 90.56%;
     overflow: hidden;
-        /* clip the sliding children */
-        position: relative;
-        display: flex;
-        align-items: center;
+    /* clip the sliding children */
+    position: relative;
+    display: flex;
+    align-items: center;
 
 
 }
+
 .properties-groups {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     max-width: 100%;
     width: 100%;
+    margin: 0 1rem;
     /* overflow: hidden; */
     transition: transform 0.3s ease-in-out;
-        will-change: transform;
+    will-change: transform;
 }
+
 .individual-property {
     display: flex;
     flex-direction: column;
@@ -116,11 +121,65 @@
 .navigator:hover {
     transform: scale(1.1);
 }
-
-#dollor{
-    color:rgba(44, 44, 44, 1);
+/* #properties-section-unique{
+    margin: 0;
+} */
+#dollor {
+    color: rgba(44, 44, 44, 1);
     font-family: "Geist";
     font-weight: 600;
     font-size: 18px;
 
+}
+#dollor-unique {
+    color: rgba(44, 44, 44, 1);
+    font-family: "Geist";
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0.3rem 0;
+
+}
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    .parent-properties {
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .individual-property {
+        max-width: 30%;
+    }
+}
+
+@media(max-width:920px) {
+    .parent-properties {
+        max-width: 100%;
+    }
+
+    .individual-property {
+        max-width: 40%;
+    }
+}
+
+@media(max-width:720px) {
+
+
+    .individual-property {
+        max-width: 45%;
+    }
+}
+@media(max-width:650px) {
+
+.parent-properties {
+        max-width: 100%;
+    }
+    .individual-property {
+        max-width: 100%;
+    }
 }
