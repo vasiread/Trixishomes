@@ -90,7 +90,10 @@
 .individual-property img {
     border-radius: 2rem;
 }
-
+#individualproperty-uniqueimg{
+    height: 251px;
+    object-fit: cover;
+}
 .individual-property .img-info {
     position: absolute;
     top: 0;

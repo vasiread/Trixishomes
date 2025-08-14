@@ -41,8 +41,11 @@
 .testimonial-videosection #video-image {
     max-width: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 2rem;
+    height: 200px;
+        object-position: center 20%;
+            /* 0% = top, 100% = bottom */
 }
 
 .videodescription-testimonial {
@@ -103,8 +106,10 @@
 .individual-testimonials {
     display: flex;
     flex-direction: column;
+
     gap: 12px;
-    height: fit-content;
+    height: 230px;
+    justify-content: center;
     min-width: 47.12%;
     width: 100%;
     border: 1px solid rgba(219, 219, 219, 1);

@@ -5,6 +5,7 @@
     max-width: 89.58%;
     width: 100%;
     margin: 0 5.2%;
+    margin-top: -130px;
 
 }
 
@@ -16,6 +17,7 @@
     gap: 48px;
     width: 100%;
     max-width: 100%;
+    
 }
 
 .categories-list {

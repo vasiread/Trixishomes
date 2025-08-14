@@ -1,8 +1,8 @@
 const properties = [
     {
         img: "assets/images/property1.png",
-        info: "For Investment",
-        location: "Bel Air, LA",
+        info: "For International Properties",
+        location: "Sheikh Zayed Road, Trade Center 2, Dubai",
         title: "The One",
         bhk: {
             bedroom: 6,
@@ -12,8 +12,8 @@ const properties = [
         price: 690000
     },
     {
-        img: "assets/images/property2.png",
-        info: "For Sell",
+        img: "assets/images/property2.jpg",
+        info: "For International Properties",
         location: "Bel Air, LA",
         title: "Billionaire Mansion",
         bhk: {
@@ -48,16 +48,16 @@ const properties = [
         price: 490000
     },
     {
-        img: "assets/images/property5.png",
-        info: "For Investment",
-        location: "Holmby Hills, LA",
-        title: "The Manor",
+        img: "assets/images/property5.jpg",
+        info: "For International Properties",
+        location: "Al Furjan, Dubai",
+        title: "The Manor by JA",
         bhk: {
             bedroom: 7,
             washroom: 5,
             sqrft: 3100
         },
-        price: 482000
+        price: 800000
     },
     {
         img: "assets/images/property6.png",
@@ -71,41 +71,19 @@ const properties = [
         },
         price: 298000
     },
+
+
     {
-        img: "assets/images/property7.png",
-        info: "For Investment",
-        location: "Bel Air, LA",
-        title: "The One",
-        bhk: {
-            bedroom: 6,
-            washroom: 4,
-            sqrft: 2780
-        },
-        price: 690000
-    },
-    {
-        img: "assets/images/property8.png",
-        info: "For Investment",
-        location: "Bel Air, LA",
-        title: "Billionaire Mansion",
-        bhk: {
-            bedroom: 5,
-            washroom: 0,
-            sqrft: 3800
-        },
-        price: 500000
-    },
-    {
-        img: "assets/images/property9.png",
-        info: "For Investment",
-        location: "Beverly Hills, CA",
+        img: "assets/images/property9.jpg",
+        info: "For International Properties",
+        location: "Palm jumeriah Oasis, Dubai",
         title: "The Beverly House",
         bhk: {
             bedroom: 3,
             washroom: 2,
             sqrft: 1500
         },
-        price: 290000
+        price: 580000
     }
 ];
 
@@ -133,17 +111,20 @@ document.addEventListener("DOMContentLoaded", () => {
             let matchesCategory = true;
 
             if (activeCategory) {
-                if (activeCategory === "SELL") {
-                    matchesCategory = info === "for sell";
-                } else if (activeCategory === "RENTALS") {
-                    matchesCategory = info === "for rent";
+                const categoryLower = activeCategory.toLowerCase();
+
+                if (categoryLower === "sell") {
+                    matchesCategory = info.includes("sell");
+                } else if (categoryLower === "rentals") {
+                    matchesCategory = info.includes("rent");
                 } else if (
-                    activeCategory === "LUXURY HOMES" ||
-                    activeCategory === "INTERNATIONAL PROPERTIES"
+                    categoryLower === "luxury homes" ||
+                    categoryLower === "international properties"
                 ) {
-                    matchesCategory = info === "for investment";
+                    matchesCategory = info.includes("international properties");
                 }
             }
+
 
             return matchesCategory && matchesSearch;
         });
@@ -212,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
 
-        <p id="dollor"><span>$</span> ${property.price.toLocaleString()}</p>
+        <p id="dollor"><span>AED</span> ${property.price.toLocaleString()}</p>
     `;
 
             propertyGrid.appendChild(card);

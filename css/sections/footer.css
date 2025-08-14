@@ -23,6 +23,7 @@
 
 }
 
+
 .footer-above {
     display: flex;
     flex-direction: column;
@@ -195,7 +196,10 @@ a{
 
 }
 
-
+input[placeholder*="*"],
+textarea[placeholder*="*"]::placeholder {
+    color: red;
+}
 
 @media(max-width: 720px) {
     .contact-us div {

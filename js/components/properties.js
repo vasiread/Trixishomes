@@ -17,25 +17,42 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 690000
         },
         {
-            img: "/assets/images/property2.png",
-            info: "For Sell",
+            img: "/assets/images/property2.jpg",
+            info: "For International Properties",
             location: "Bel Air, LA",
             title: "Billionaire Mansion",
             bhk: { bedroom: 5, washroom: 0, sqrft: 3800 },
             price: 500000
         },
+
+
        
+
+        {
+            img: "assets/images/property10.png",
+            info: "For Investment",
+            location: "Business Bay, Dubai",
+            title: "DWTN residence by Deyaa",
+            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
+            price: 2100000
+        },
+        {
+            img: "assets/images/property11.png",
+            info: "For Investment",
+            location: "Masaar, Sharjah",
+            title: "MASAAR by ARADA",
+            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
+            price: 4100000
+        },
        
         {
-            img: "/assets/images/property3.png",
-            info: "For Rent",
-            location: "Beverly Hills, CA",
-            title: "The Beverly House",
-            bhk: { bedroom: 2, washroom: 3, sqrft: 2100 },
-            price: 290000
+            img: "assets/images/property13.png",
+            info: "For Investment",
+            location: "Rashid Yatchs & Marina, Dubai",
+            title: " Baystar by EMAAR",
+            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
+            price: 1900000
         },
-
-        // ✅ Added from the reference list
         {
             img: "assets/images/property4.png",
             info: "For Rent",
@@ -45,12 +62,12 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 490000
         },
         {
-            img: "assets/images/property5.png",
+            img: "assets/images/property5.jpg",
             info: "For Investment",
-            location: "Holmby Hills, LA",
-            title: "The Manor",
+            location: "AI Furion, Dubai",
+            title: "The Manor by JA",
             bhk: { bedroom: 7, washroom: 5, sqrft: 3100 },
-            price: 482000
+            price: 800000
         },
         {
             img: "assets/images/property6.png",
@@ -60,30 +77,17 @@ document.addEventListener("DOMContentLoaded", () => {
             bhk: { bedroom: 2, washroom: 0, sqrft: 2200 },
             price: 298000
         },
+      
+        
         {
-            img: "assets/images/property7.png",
+            img: "assets/images/property9.jpg",
             info: "For Investment",
-            location: "Bel Air, LA",
-            title: "The One",
-            bhk: { bedroom: 6, washroom: 4, sqrft: 2780 },
-            price: 690000
-        },
-        {
-            img: "assets/images/property8.png",
-            info: "For Investment",
-            location: "Bel Air, LA",
-            title: "Billionaire Mansion",
-            bhk: { bedroom: 5, washroom: 0, sqrft: 3800 },
-            price: 500000
-        },
-        {
-            img: "assets/images/property9.png",
-            info: "For Investment",
-            location: "Beverly Hills, CA",
+            location: "Palm jumeriah Oasis, Dubai",
             title: "The Beverly House",
             bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
             price: 290000
         }
+
     ];
 
 
@@ -112,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // ✅ Add full card with BHK block in between title & price
         propertiesList.innerHTML += `
         <div class="individual-property">
-            <img src="${property.img}" alt="">
+            <img src="${property.img}" alt="" id="individualproperty-uniqueimg">
             <div class="img-info">${property.info}</div>
             <div class="location-property">
                 <img src="/assets/images/mapicon.png" alt="">
@@ -132,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
 
-            <p id="dollor-unique" ><span>$</span> ${property.price.toLocaleString()}</p>
+            <p id="dollor-unique" ><span>AED</span> ${property.price.toLocaleString()}</p>
         </div>
     `;
     });
