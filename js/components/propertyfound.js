@@ -14,7 +14,7 @@ const properties = [
     {
         img: "assets/images/property2.jpg",
         info: "For International Properties",
-        location: "Bel Air, LA",
+        location: "Hill estate, Dubai",
         title: "Billionaire Mansion",
         bhk: {
             bedroom: 5,
@@ -24,9 +24,9 @@ const properties = [
         price: 500000
     },
     {
-        img: "assets/images/property3.png",
+        img: "assets/images/property3.jpg",
         info: "For Rent",
-        location: "Beverly Hills, CA",
+        location: "Creek Harbour, Dubai",
         title: "Sunset Home",
         bhk: {
             bedroom: 3,
@@ -38,7 +38,7 @@ const properties = [
     {
         img: "assets/images/property4.png",
         info: "For Rent",
-        location: "Beverly Hills, CA",
+        location: "Atlantis, The Palm, Dubai",
         title: "Palazzo di Amore",
         bhk: {
             bedroom: 4,
@@ -60,10 +60,10 @@ const properties = [
         price: 800000
     },
     {
-        img: "assets/images/property6.png",
+        img: "assets/images/property6.jpg",
         info: "For Sell",
-        location: "Upper East Side, NY",
-        title: "The Penthouse at Central Park Tower",
+        location: "Al Safa, Dubai",
+        title: "Penthouse Cavalli couture by Canal",
         bhk: {
             bedroom: 2,
             washroom: 0,

@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
             { src: "/assets/images/Apartments for sale/Dubai hills estate.jpg", title: "Dubai Hills Estate" },
             { src: "/assets/images/Apartments for sale/Dubai marina .jpg", title: "Dubai marina" },
             { src: "/assets/images/Apartments for sale/Mina Rashid.jpg", title: "Mina Rashid" },
+            { src: "/assets/images/Apartments for sale/greek harbour.jpg", title: "creek harbour" },
+            { src: "/assets/images/Apartments for sale/city walk.jpg", title: "city walk" },
         ],
         "rent-apartments": [
             { src: "/assets/images/Apartment for rent/Blue waters.jpg", title: "blue waters" },
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { src: "/assets/images/Villa for sales/Jbr luxury.jpg", title: "jbr luxury" },
             { src: "/assets/images/Villa for sales/Emirates hills.jpg", title: "Emirates hills" },
             { src: "/assets/images/Villa for sales/Palm jumeirah.jpg", title: "palm jumeirah" },
+            { src: "/assets/images/Villa for sales/Business Bay.jpg", title: "Business bay" },
         ],
         "rent-villas": [
             { src: "/assets/images/Villa for rent/Blue water.jpg", title: "blue water" },

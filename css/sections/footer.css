@@ -8,8 +8,8 @@
     padding: 98px 4.16%;
     display: flex;
     flex-direction: column;
- 
-    
+
+
 }
 
 #footer img {
@@ -49,13 +49,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 .footer-aboveinformation p {
     margin: 0;
 
 }
+
 .footer-aboveinformation p:first-child {
     font-family: "Belleza";
     font-weight: 400;
@@ -65,6 +66,7 @@
     text-align: center;
     width: 100%;
 }
+
 .footer-aboveinformation p:nth-child(2) {
     font-family: "Geist";
     font-weight: 100;
@@ -112,7 +114,7 @@
 }
 
 
-.contact-us{
+.contact-us {
     max-width: 55.55%;
     width: 100%;
     height: 387.8px;
@@ -122,83 +124,87 @@
     margin-top: 96px;
     padding: 2rem;
     display: flex;
-        flex-direction: column;
-        gap: 2rem;
+    flex-direction: column;
+    gap: 2rem;
 }
-.contact-us .first-column,.contact-us .second-column{
+
+.contact-us .first-column,
+.contact-us .second-column {
     display: flex;
     gap: 5%;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
-.third-column input{
+
+.third-column input {
     height: 100px;
     outline: none;
     width: 100%;
-    border:none;
-   border-bottom: 1px solid rgba(199, 199, 199, 1)
-
-}
-.first-column input, .second-column input{
-    height: 36px;
-    width: 100%;
-    outline: none;
-    border:none;
+    border: none;
     border-bottom: 1px solid rgba(199, 199, 199, 1)
 }
 
-.first-column input::placeholder , .second-column input::placeholder{
+.first-column input,
+.second-column input {
+    height: 36px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(199, 199, 199, 1)
+}
+
+.first-column input::placeholder,
+.second-column input::placeholder {
     font-family: "Geist";
-        font-weight: 300;
-       font-size: 1rem;
-    color:rgba(199, 199, 199, 1);
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(199, 199, 199, 1);
     margin-left: 8px;
 }
 
-.third-column input::placeholder{
+.third-column input::placeholder {
     font-family: "Geist";
-        font-weight: 300;
-        font-size: 1rem;
-        color: rgba(199, 199, 199, 1);
-        margin-left: 8px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(199, 199, 199, 1);
+    margin-left: 8px;
 }
-.fourth-column button{
+
+.fourth-column button {
     width: 100%;
     outline: none;
     border: none;
     background-color: rgba(0, 0, 0, 1);
     font-family: "Geist";
-        font-weight: 300;
-        font-style: Light;
-        font-size: 18px;
-       border-radius: 100px;
-       color:rgba(255, 255, 255, 1);
-       height: 50px;
-
-}
-.copyrights{
-    font-family: "Geist";
-        font-weight: 300;
-         font-size: 18px;
-         color: rgba(199, 199, 199, 1);
-         align-self: flex-end;
-       
-      
- }
-.footersecondsection p{
-    font-family: "Geist";
-        font-weight: 300;
-        font-size: 18px;
-        color: rgba(199, 199, 199, 1);
+    font-weight: 300;
+    font-style: Light;
+    font-size: 18px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    height: 50px;
 
 }
 
-input[placeholder*="*"],
-textarea[placeholder*="*"]::placeholder {
-    color: red;
+.copyrights {
+    font-family: "Geist";
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(199, 199, 199, 1);
+    align-self: flex-end;
+
+
+}
+
+.footersecondsection p {
+    font-family: "Geist";
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(199, 199, 199, 1);
+
 }
 
 @media(max-width: 720px) {
@@ -207,5 +213,5 @@ textarea[placeholder*="*"]::placeholder {
 
     }
 
-     
+
 }
