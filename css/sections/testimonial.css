@@ -108,8 +108,8 @@
     flex-direction: column;
 
     gap: 12px;
-    height: 230px;
-    justify-content: center;
+    height: 300px;
+    justify-content: space-evenly;
     min-width: 47.12%;
     width: 100%;
     border: 1px solid rgba(219, 219, 219, 1);
@@ -141,7 +141,7 @@
     cursor: pointer;
 }
 
-#testimonial-description {
+.testimonial-description {
     margin: 0;
     color: rgba(44, 44, 44, 1);
     font-family: "Geist";

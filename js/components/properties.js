@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
             info: "For Investment",
             location: "Sheikh Zayed Road, Trade Center 2, Dubai",
             title: "The One",
-            bhk: { bedroom: 6, washroom: 4, sqrft: 2780 },
-            price: 690000
+            bhk: { bedroom: 1, washroom: 1, sqrft: 750 },
+            price: 4800000
         },
         {
             img: "/assets/images/property2.jpg",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Hill estate, Dubai",
             title: "Billionaire Mansion",
             bhk: { bedroom: 5, washroom: 0, sqrft: 3800 },
-            price: 500000
+            price: 11000000
         },
 
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             info: "For Investment",
             location: "Business Bay, Dubai",
             title: "DWTN residence by Deyaa",
-            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
+            bhk: { bedroom: 1, washroom: 2, sqrft: 800 },
             price: 2100000
         },
         {
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
             info: "For Investment",
             location: "Masaar, Sharjah",
             title: "MASAAR by ARADA",
-            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
-            price: 4100000
+            bhk: { bedroom: 4, washroom: 4, sqrft: 1850 },
+            price: 2800000
         },
        
         {
@@ -50,16 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
             info: "For Investment",
             location: "Dubailand, Dubai",
             title: "Athlon by ALDAR",
-            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
+            bhk: { bedroom: 3, washroom: 4, sqrft: 2400 },
             price: 10300000
         },
         {
-            img: "assets/images/property4.png",
+            img: "assets/images/property4.jpg",
             info: "For Rent",
-            location: "Atlantis, The Palm, Dubai",
+            location: "Blue Waters Island, Dubai",
             title: "Palazzo di Amore",
-            bhk: { bedroom: 4, washroom: 2, sqrft: 2100 },
-            price: 490000
+            bhk: { bedroom: 3, washroom: 4, sqrft: 2100 },
+            price: 240000
         },
         {
             img: "assets/images/property5.jpg",
@@ -67,15 +67,15 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "AI Furion, Dubai",
             title: "The Manor by JA",
             bhk: { bedroom: 7, washroom: 5, sqrft: 3100 },
-            price: 800000
+            price: 15000000
         },
         {
             img: "assets/images/property6.jpg",
             info: "For Sell",
             location: "Al Safa, Dubai",
-            title: "Penthouse Cavalli couture by Canal",
+            title: "Cavalli couture by Canal",
             bhk: { bedroom: 2, washroom: 0, sqrft: 2200 },
-            price: 298000
+            price: 8000000
         },
       
         
@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
             info: "For Investment",
             location: "Palm jumeriah Oasis, Dubai",
             title: "The Beverly House",
-            bhk: { bedroom: 3, washroom: 2, sqrft: 1500 },
-            price: 290000
+            bhk: { bedroom: 3, washroom: 2, sqrft: 2950 },
+            price: 45000000
         }
 
     ];

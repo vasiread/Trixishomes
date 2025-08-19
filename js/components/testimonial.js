@@ -5,35 +5,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const profileDescription = document.getElementById("videointro-profiledescription");
 
     const testimonials = [
-       
         {
             stars: 5,
-            description: "Buying my first home in Dubai felt overwhelming at first, but Ahmed guided me through every step. He knew exactly which areas were growing, and his advice made me feel confident in my decision",
+            description: "We had a wonderful experience buying our property in Dubai through Rithwik at Trixis Homes.His professionalism, patience, and expert guidance made the process seamless.He is honest, trustworthy, and always available to support at every stage.  Highly recommend Rithwik and Trixis Homes for buying in Dubai!",
             profileImg: "assets/images/profile2.jpg",
-            name: "Sarah M",
-            designation: "Senior Financial Analyst"
+            name: "Chitra Rattehalli",
+            designation: "Local Guide"
         },
         {
             stars: 5,
-            description: "Trixis Homes sold my Dubai Marina apartment in record time. The marketing was spot on, the viewings were well-handled, and I got the price I wanted without stress",
+            description: "Buying my second property in Dubai through Trixis Homes was an excellent experience.  Vignesh was polite, professional, and guided us with great detail and solutions.  His support helped us overcome financing challenges and confidently move ahead.  Truly appreciate his honesty and expertise highly recommend Trixis Homes!",
             profileImg: "assets/images/profile3.jpg",
-            name: "Daniel R",
-            designation: "Entrepreneur & Property Owner"
+            name: "Praveen Dcruze",
+            designation: "Local Guide"
         },
         {
             stars: 5,
-            description: "As an overseas buyer investing in Dubai, I was worried about the process. Emily and the team kept me informed, handled all the paperwork, and secured me a property with great ROI. They made it simple",
+            description: "Thanks Rithvik for helping us out in navigating options, recommended to anyone who needs expert knowledge and transparent views.",
             profileImg: "assets/images/profile4.jpg",
-            name: "Rajiv P",
-            designation: "International Investor"
+            name: "Christian Briffa",
+            designation: "Local Guide"
         },
         {
             stars: 5,
-            description: "Emily walked me through every step of my green home investment. She explained things clearly, gave great advice, and honestly just made it all feel doable.",
+            description: "An excellent experience purchasing my unit through Trixis Homes.  A special thanks to Vignesh for his meticulous attention to detail and in-depth project knowledge.   He clarified all doubts with facts and figures, helping us make a confident decision.  Highly recommend Vignesh and Trixis Homes for any property dealings in the UAE.",
             profileImg: "assets/images/profile1.png",
-            name: "Logan Price",
-            designation: "Environmental Consultant"
+            name: "Nashath A Hameed",
+            designation: "Local Guide"
         },
+        {
+            stars: 5,
+            description: "Thanks Rithvik for the assistance, we're very much happy with the outcome! All the best!",
+            profileImg: "assets/images/profile1.png",
+            name: "John Chavez",
+            designation: "Local Guide"
+        }
     ];
 
     // Build testimonial HTML

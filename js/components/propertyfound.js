@@ -5,11 +5,11 @@ const properties = [
         location: "Sheikh Zayed Road, Trade Center 2, Dubai",
         title: "The One",
         bhk: {
-            bedroom: 6,
-            washroom: 4,
-            sqrft: 2780
+            bedroom: 1,
+            washroom: 1,
+            sqrft: 750
         },
-        price: 690000
+        price: 4800000
     },
     {
         img: "assets/images/property2.jpg",
@@ -21,13 +21,13 @@ const properties = [
             washroom: 0,
             sqrft: 3800
         },
-        price: 500000
+        price: 11000000
     },
     {
         img: "assets/images/property3.jpg",
         info: "For Rent",
         location: "Creek Harbour, Dubai",
-        title: "Sunset Home",
+        title: "The Address",
         bhk: {
             bedroom: 3,
             washroom: 2,
@@ -36,16 +36,16 @@ const properties = [
         price: 290000
     },
     {
-        img: "assets/images/property4.png",
+        img: "assets/images/property4.jpg",
         info: "For Rent",
-        location: "Atlantis, The Palm, Dubai",
+        location: "Blue Waters Island, Dubai",
         title: "Palazzo di Amore",
         bhk: {
-            bedroom: 4,
-            washroom: 2,
+            bedroom: 3,
+            washroom: 4,
             sqrft: 2100
         },
-        price: 490000
+        price: 240000
     },
     {
         img: "assets/images/property5.jpg",
@@ -57,19 +57,19 @@ const properties = [
             washroom: 5,
             sqrft: 3100
         },
-        price: 800000
+        price: 15000000
     },
     {
         img: "assets/images/property6.jpg",
         info: "For Sell",
         location: "Al Safa, Dubai",
-        title: "Penthouse Cavalli couture by Canal",
+        title: "Cavalli couture by Canal",
         bhk: {
             bedroom: 2,
             washroom: 0,
             sqrft: 2200
         },
-        price: 298000
+        price: 8000000
     },
 
 
@@ -81,9 +81,9 @@ const properties = [
         bhk: {
             bedroom: 3,
             washroom: 2,
-            sqrft: 1500
+            sqrft: 2950
         },
-        price: 580000
+        price: 45000000
     }
 ];
 

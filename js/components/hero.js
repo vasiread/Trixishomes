@@ -64,41 +64,31 @@ window.addEventListener("DOMContentLoaded", () => {
             console.warn('Target not found!');
         }
     });
+    document.getElementById("logoimg").addEventListener("click", function () {
+        const section = document.getElementById("herosection");
+        const yOffset = -210; // adjust to match header height
+        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    document.getElementById('nav-home').addEventListener('click', () => {
-        document.getElementById('herosection').scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ top: y, behavior: "smooth" });
+    });
+
+    function scrollWithOffset(id, offset = -140) {
+        const element = document.getElementById(id);
+        const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
+
         if (window.innerWidth <= 1024) {
             closeMobileMenu();
         }
-    });
+    }
 
-    document.getElementById('nav-services').addEventListener('click', () => {
-        document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
-        if (window.innerWidth <= 1024) {
-            closeMobileMenu();
-        }
-    });
+    document.getElementById('nav-home').addEventListener('click', () => scrollWithOffset('herosection', -210));
+    document.getElementById('nav-services').addEventListener('click', () => scrollWithOffset('services'));
+    document.getElementById('nav-properties').addEventListener('click', () => scrollWithOffset('properties'));
+    document.getElementById('nav-about').addEventListener('click', () => scrollWithOffset('about'));
+    document.getElementById('nav-agents').addEventListener('click', () => scrollWithOffset('testimonials'));
 
-    document.getElementById('nav-properties').addEventListener('click', () => {
-        document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
-        if (window.innerWidth <= 1024) {
-            closeMobileMenu();
-        }
-    });
-
-    document.getElementById('nav-about').addEventListener('click', () => {
-        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-        if (window.innerWidth <= 1024) {
-            closeMobileMenu();
-        }
-    });
-
-    document.getElementById('nav-agents').addEventListener('click', () => {
-        document.getElementById('testimonials').scrollIntoView({ behavior: 'smooth' });
-        if (window.innerWidth <= 1024) {
-            closeMobileMenu();
-        }
-    });
     window.addEventListener('resize', () => {
         if (window.innerWidth > 1024) {
             // Reset mobile nav visibility and hamburger icon
