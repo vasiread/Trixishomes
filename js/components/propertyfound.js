@@ -39,13 +39,13 @@ const properties = [
         img: "assets/images/property4.jpg",
         info: "For Rent",
         location: "Blue Waters Island, Dubai",
-        title: "Palazzo di Amore",
+        title: "Blue Waters",
         bhk: {
             bedroom: 3,
             washroom: 4,
             sqrft: 2100
         },
-        price: 240000
+        price: 360000
     },
     {
         img: "assets/images/property5.jpg",
@@ -151,56 +151,53 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = document.createElement("div");
             card.className = "property-card";
 
-            // Start building the card's HTML
+            // washroom logic
             let washroomHTML = '';
             if (property.bhk.washroom > 0) {
                 washroomHTML = `
-            <div class="washroomdiv">
-                <img src="assets/images/washroomicon.png" alt="">
-                <p>${property.bhk.washroom}</p>
-            </div>
-        `;
+                <div class="washroomdiv">
+                    <img src="assets/images/washroomicon.png" alt="">
+                    <p>${property.bhk.washroom}</p>
+                </div>
+            `;
             }
-            else if (property.bhk.washroom === 0) {
-                washroomHTML = `
-            <div class="washroomdiv" style="display:none">
-                <img src="assets/images/washroomicon.png" alt="">
-                <p>${property.bhk.washroom}</p>
-            </div>
-        `;
+
+            // ✅ info logic
+            let infoHTML = '';
+            if (property.info.toLowerCase() !== "for international properties") {
+                infoHTML = `<div class="img-info-found">${property.info}</div>`;
             }
 
             card.innerHTML = `
-        <img id="propertyunique-img" src="${property.img}" alt="">
-        <div class="img-info-found">${property.info}</div>
-        <div class="location-property-found">
-            <img src="assets/images/mapicon.png" alt="">
-            <p>${property.location}</p>
-        </div>
-        <h3>${property.title}</h3>
+            <img id="propertyunique-img" src="${property.img}" alt="">
+            ${infoHTML}
+            <div class="location-property-found">
+                <img src="assets/images/mapicon.png" alt="">
+                <p>${property.location}</p>
+            </div>
+            <h3>${property.title}</h3>
 
-        <div class="property-sqrtinfos">
-            <div class="bedroomdiv">
-                <img src="assets/images/bedroomicon.png" alt="">
-                <p>${property.bhk.bedroom}</p>
+            <div class="property-sqrtinfos">
+                <div class="bedroomdiv">
+                    <img src="assets/images/bedroomicon.png" alt="">
+                    <p>${property.bhk.bedroom}</p>
+                </div>
+
+                ${washroomHTML}
+
+                <div class="sqrft">
+                    <img src="assets/images/sqrfticon.png" alt="">
+                    <p>${property.bhk.sqrft} sq.ft</p>
+                </div>
             </div>
 
-            ${washroomHTML}
-
-            <div class="sqrft">
-                <img src="assets/images/sqrfticon.png" alt="">
-                <p>${property.bhk.sqrft} sq.ft</p>
-            </div>
-        </div>
-
-        <p id="dollor"><span>AED</span> ${property.price.toLocaleString()}</p>
-    `;
+            <p id="dollor"><span>AED</span> ${property.price.toLocaleString()}</p>
+        `;
 
             propertyGrid.appendChild(card);
         });
-
-
     }
+
 
 
     // Handle category click

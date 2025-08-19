@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "assets/images/property4.jpg",
             info: "For Rent",
             location: "Blue Waters Island, Dubai",
-            title: "Palazzo di Amore",
+            title: "Blue Waters",
             bhk: { bedroom: 3, washroom: 4, sqrft: 2100 },
-            price: 240000
+            price: 360000
         },
         {
             img: "assets/images/property5.jpg",
@@ -86,6 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "The Beverly House",
             bhk: { bedroom: 3, washroom: 2, sqrft: 2950 },
             price: 45000000
+        },
+        {
+            img: "assets/images/property14.png",
+            info: "For Rent",
+            location: " Rashid Yatchs & Marina, Dubai",
+            title: "Baystar by EMAAR",
+            bhk: { bedroom: 2, washroom: 1, sqrft: 750 },
+            price: 1900000
         }
 
     ];

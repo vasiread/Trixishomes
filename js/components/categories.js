@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
         "rent-villas": [
             { src: "assets/images/Villa for rent/arabian ranches.jpg", title: "arabian ranches" },
-            { src: "assets/images/Villa for rent/Creek mansion.jpg", title: "Creek mansion" },
+            { src: "assets/images/Villa for rent/Damac Hills 1.jpg", title: "Damac Hills 1" },
             { src: "assets/images/Villa for rent/Emirates hills.jpg", title: "emirates hills" },
             { src: "assets/images/Villa for rent/Nad AI Sheba.jpg", title: "Nad AI Sheba" },
             { src: "assets/images/Villa for rent/Hill estates_.jpg", title: "Hill estates" },
