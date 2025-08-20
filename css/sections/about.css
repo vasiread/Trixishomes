@@ -240,18 +240,19 @@ body{
     display: flex;
     gap: 2rem;
     animation: scroll-marquee 15s linear infinite;
+    width: max-content;
 }
-
+ 
 @keyframes scroll-marquee {
-    0% {
-        transform: translateX(0%);
+    from {
+        transform: translateX(0);
     }
 
-    100% {
-        transform: translateX(-30%);
+    to {
+        transform: translateX(-50%);
+        /* shift by exactly one copy */
     }
 }
-
 /* =======================
    Global Animation
 ========================== */
