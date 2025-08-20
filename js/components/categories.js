@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const categoryImages = {
         "sale-apartments": [
-            { src: "assets/images/Apartments for sale/Business bay.jpg", title: "Business bay" },
-            { src: "assets/images/Apartments for sale/Creek harbour_.jpg", title: "Creek harbour" },
-            { src: "assets/images/Apartments for sale/Dubai hills estate.jpg", title: "Dubai Hills Estate" },
-            { src: "assets/images/Apartments for sale/Dubai marina .jpg", title: "Dubai marina" },
-            { src: "assets/images/Apartments for sale/Mina Rashid.jpg", title: "Mina Rashid" },
-            { src: "assets/images/Apartments for sale/greek harbour.jpg", title: "Downtown" },
-            { src: "assets/images/Apartments for sale/city walk.jpg", title: "city walk" },
+            { src: "assets/images/Apartments for sale/Business bay.webp", title: "Business bay" },
+            { src: "assets/images/Apartments for sale/Creek harbour_.webp", title: "Creek harbour" },
+            { src: "assets/images/Apartments for sale/Dubai hills estate.webp", title: "Dubai Hills Estate" },
+            { src: "assets/images/Apartments for sale/Dubai marina .webp", title: "Dubai marina" },
+            { src: "assets/images/Apartments for sale/Mina Rashid.webp", title: "Mina Rashid" },
+            { src: "assets/images/Apartments for sale/greek harbour.webp", title: "Downtown" },
+            { src: "assets/images/Apartments for sale/city walk.webp", title: "city walk" },
         ],
         "rent-apartments": [
             { src: "assets/images/Apartment for rent/Blue waters.jpg", title: "Jbr" },
