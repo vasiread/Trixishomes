@@ -16,14 +16,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
     hamburger.addEventListener("click", () => {
         if (isMenuOpen && navList && rightList) {
-            hamburger.src = "./assets/images/hanburger.png";
+            hamburger.src = "/public/assets/images/hanburger.png";
             hamburger.style.right = "3%";
             hamburger.style.top = "30%";
             navList.style.display = "none";
             rightList.style.display = "none";
 
         } else {
-            hamburger.src = "./assets/images/close_small.png";
+            hamburger.src = "/public/assets/images/close_small.png";
             hamburger.style.right = "3%";
             hamburger.style.top = "3%";
             hamburger.style.width = "13px";
@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const rightList = document.querySelector(".rightside-nav");
 
         // Reset hamburger icon
-        hamburger.src = "./assets/images/hanburger.png";
+        hamburger.src = "/public/assets/images/hanburger.png";
         hamburger.style.right = "3%";
         hamburger.style.top = "30%";
 
@@ -103,7 +103,7 @@ window.addEventListener("DOMContentLoaded", () => {
             // Reset mobile nav visibility and hamburger icon
             navList.style.display = 'flex';
             rightList.style.display = 'flex';
-            hamburger.src = "./assets/images/hanburger.png";
+            hamburger.src = "/public/assets/images/hanburger.png";
             hamburger.style.right = "";
             hamburger.style.top = "";
             hamburger.style.width = "";

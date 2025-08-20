@@ -1,6 +1,6 @@
 const properties = [
     {
-        img: "/assets/images/property1.png",
+        img: "/public/assets/images/property1.png",
         info: "For International Properties",
         location: "Sheikh Zayed Road, Trade Center 2, Dubai",
         title: "The One",
@@ -12,7 +12,7 @@ const properties = [
         price: 4800000
     },
     {
-        img: "/assets/images/property2.jpg",
+        img: "/public/assets/images/property2.jpg",
         info: "For International Properties",
         location: "Hill estate, Dubai",
         title: "Billionaire Mansion",
@@ -24,7 +24,7 @@ const properties = [
         price: 11000000
     },
     {
-        img: "/assets/images/property3.jpg",
+        img: "/public/assets/images/property3.jpg",
         info: "For Rent",
         location: "Creek Harbour, Dubai",
         title: "The Address",
@@ -36,7 +36,7 @@ const properties = [
         price: 290000
     },
     {
-        img: "/assets/images/property4.jpg",
+        img: "/public/assets/images/property4.jpg",
         info: "For Rent",
         location: "Blue Waters Island, Dubai",
         title: "Blue Waters",
@@ -48,7 +48,7 @@ const properties = [
         price: 360000
     },
     {
-        img: "/assets/images/property5.jpg",
+        img: "/public/assets/images/property5.jpg",
         info: "For International Properties",
         location: "Al Furjan, Dubai",
         title: "The Manor by JA",
@@ -60,7 +60,7 @@ const properties = [
         price: 15000000
     },
     {
-        img: "/assets/images/property6.jpg",
+        img: "/public/assets/images/property6.jpg",
         info: "For Sell",
         location: "Al Safa, Dubai",
         title: "Cavalli couture by Canal",
@@ -74,7 +74,7 @@ const properties = [
 
 
     {
-        img: "/assets/images/property9.jpg",
+        img: "/public/assets/images/property9.jpg",
         info: "For International Properties",
         location: "Palm jumeriah Oasis, Dubai",
         title: "The Beverly House",
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (property.bhk.washroom > 0) {
                 washroomHTML = `
                 <div class="washroomdiv">
-                    <img src="/assets/images/washroomicon.png" alt="">
+                    <img src="/public/assets/images/washroomicon.png" alt="">
                     <p>${property.bhk.washroom}</p>
                 </div>
             `;
@@ -172,21 +172,21 @@ document.addEventListener("DOMContentLoaded", () => {
             <img id="propertyunique-img" src="${property.img}" alt="">
             ${infoHTML}
             <div class="location-property-found">
-                <img src="/assets/images/mapicon.png" alt="">
+                <img src="/public/assets/images/mapicon.png" alt="">
                 <p>${property.location}</p>
             </div>
             <h3>${property.title}</h3>
 
             <div class="property-sqrtinfos">
                 <div class="bedroomdiv">
-                    <img src="/assets/images/bedroomicon.png" alt="">
+                    <img src="/public/assets/images/bedroomicon.png" alt="">
                     <p>${property.bhk.bedroom}</p>
                 </div>
 
                 ${washroomHTML}
 
                 <div class="sqrft">
-                    <img src="/assets/images/sqrfticon.png" alt="">
+                    <img src="/public/assets/images/sqrfticon.png" alt="">
                     <p>${property.bhk.sqrft} sq.ft</p>
                 </div>
             </div>

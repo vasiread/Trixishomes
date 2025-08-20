@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ✅ Property data (dynamic)
     const properties = [
         {
-            img: "/assets/images/property1.png",
+            img: "/public/assets/images/property1.png",
             info: "For Investment",
             location: "Sheikh Zayed Road, Trade Center 2, Dubai",
             title: "The One",
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 4800000
         },
         {
-            img: "/assets/images/property2.jpg",
+            img: "/public/assets/images/property2.jpg",
             info: "For International Properties",
             location: "Hill estate, Dubai",
             title: "Billionaire Mansion",
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 11000000
         },
         {
-            img: "/assets/images/property10.png",
+            img: "/public/assets/images/property10.png",
             info: "For Investment",
             location: "Business Bay, Dubai",
             title: "DWTN residence by Deyaa",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 2100000
         },
         {
-            img: "/assets/images/property11.png",
+            img: "/public/assets/images/property11.png",
             info: "For Investment",
             location: "Masaar, Sharjah",
             title: "MASAAR by ARADA",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 2800000
         },
         {
-            img: "/assets/images/property13.png",
+            img: "/public/assets/images/property13.png",
             info: "For Investment",
             location: "Dubailand, Dubai",
             title: "Athlon by ALDAR",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 10300000
         },
         {
-            img: "/assets/images/property4.jpg",
+            img: "/public/assets/images/property4.jpg",
             info: "For Rent",
             location: "Blue Waters Island, Dubai",
             title: "Blue Waters",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 360000
         },
         {
-            img: "/assets/images/property5.jpg",
+            img: "/public/assets/images/property5.jpg",
             info: "For Investment",
             location: "AI Furion, Dubai",
             title: "The Manor by JA",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 15000000
         },
         {
-            img: "/assets/images/property6.jpg",
+            img: "/public/assets/images/property6.jpg",
             info: "For Sell",
             location: "Al Safa, Dubai",
             title: "Cavalli couture by Canal",
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 8000000
         },
         {
-            img: "/assets/images/property9.jpg",
+            img: "/public/assets/images/property9.jpg",
             info: "For Investment",
             location: "Palm jumeriah Oasis, Dubai",
             title: "The Beverly House",
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             price: 45000000
         },
         {
-            img: "/assets/images/property14.png",
+            img: "/public/assets/images/property14.png",
             info: "For Rent",
             location: "Rashid Yatchs & Marina, Dubai",
             title: "Baystar by EMAAR",
@@ -97,14 +97,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (property.bhk.washroom > 0) {
             washroomHTML = `
             <div class="washroomdiv">
-                <img src="/assets/images/washroomicon.png" alt="">
+                <img src="/public/assets/images/washroomicon.png" alt="">
                 <p>${property.bhk.washroom}</p>
             </div>
         `;
         } else {
             washroomHTML = `
             <div class="washroomdiv" style="display:none">
-                <img src="/assets/images/washroomicon.png" alt="">
+                <img src="/public/assets/images/washroomicon.png" alt="">
                 <p>${property.bhk.washroom}</p>
             </div>
         `;
@@ -115,19 +115,19 @@ document.addEventListener("DOMContentLoaded", () => {
             <img src="${property.img}" alt="" id="individualproperty-uniqueimg">
             <div class="img-info">${property.info}</div>
             <div class="location-property">
-                <img src="/assets/images/mapicon.png" alt="">
+                <img src="/public/assets/images/mapicon.png" alt="">
                 <p>${property.location}</p>
             </div>
             <h3>${property.title}</h3>
 
             <div class="property-sqrtinfos" id="properties-section-unique">
                 <div class="bedroomdiv">
-                    <img src="/assets/images/bedroomicon.png" alt="">
+                    <img src="/public/assets/images/bedroomicon.png" alt="">
                     <p>${property.bhk.bedroom}</p>
                 </div>
                 ${washroomHTML}
                 <div class="sqrft">
-                    <img src="/assets/images/sqrfticon.png" alt="">
+                    <img src="/public/assets/images/sqrfticon.png" alt="">
                     <p>${property.bhk.sqrft} sq.ft</p>
                 </div>
             </div>
