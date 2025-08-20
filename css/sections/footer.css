@@ -212,6 +212,8 @@ a {
         flex-direction: column;
 
     }
-
+.contact-us{
+    max-width: 100%;
+}
 
 }

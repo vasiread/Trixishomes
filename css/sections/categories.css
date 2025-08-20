@@ -21,10 +21,12 @@
 }
 
 .categories-list {
-    display: flex;
+    display: grid;
+    
     justify-content: center;
     gap: 3.8%;
     width: 100%;
+    grid-template-columns: repeat(4,1fr);
 
 }
 
@@ -119,7 +121,7 @@ font-size: clamp(16px, 1.25vw, 24px);    /* line-height: 43.2px; */
 .img-wrapper {
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    overflow-x: hidden;
     border-radius: 2rem;
  }
 
@@ -141,12 +143,12 @@ font-size: clamp(16px, 1.25vw, 24px);    /* line-height: 43.2px; */
     border-radius: 2rem;
     pointer-events: none;
 }
- 
 .categories-list li {
     list-style: none;
     font-family: "Geist";
     font-weight: 300;
-    font-size: clamp(14px, 1.2vw, 18px);
+    font-size: clamp(12px, 1.5vw, 15px);
+    /* min 12px, scales with viewport, max 18px */
     color: rgba(0, 0, 0, 1);
     margin: 1rem 9.5px;
     cursor: pointer;
@@ -154,5 +156,58 @@ font-size: clamp(16px, 1.25vw, 24px);    /* line-height: 43.2px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
+}
+
+/* Tablet: stack 2 per row */
+@media (max-width: 1024px) {
+    .categories-listitems {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .categories-firstgroup,
+    .categories-secondgroup,
+    .categories-thirdgroup,
+    .categories-fourthgroup {
+        max-width: 48%;
+        /* 2 per row */
+        height: auto;
+    }
+
+    #unique-third {
+        height: 520px;
+        /* prevent overflow on smaller screens */
+    }
+}
+
+/* Mobile: stack 1 per row */
+@media (max-width: 600px) {
+    .categories-listitems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories-firstgroup,
+    .categories-secondgroup,
+    .categories-thirdgroup,
+    .categories-fourthgroup {
+        max-width: 100%;
+        /* full width */
+        height: auto;
+    }
+
+    .img-wrapper img {
+        height: auto;
+        /* allow natural image height */
+        min-height: 200px;
+        /* optional: keep consistent card look */
+    }
+
+    #unique-third {
+        height: auto;
+    }
+        .categories-list{
+            grid-template-columns: repeat(2,1fr);
+        }
 }

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { src: "assets/images/Apartments for sale/Dubai hills estate.jpg", title: "Dubai Hills Estate" },
             { src: "assets/images/Apartments for sale/Dubai marina .jpg", title: "Dubai marina" },
             { src: "assets/images/Apartments for sale/Mina Rashid.jpg", title: "Mina Rashid" },
-            { src: "assets/images/Apartments for sale/greek harbour.jpg", title: "creek harbour" },
+            { src: "assets/images/Apartments for sale/greek harbour.jpg", title: "Downtown" },
             { src: "assets/images/Apartments for sale/city walk.jpg", title: "city walk" },
         ],
         "rent-apartments": [

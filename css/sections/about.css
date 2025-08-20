@@ -5,9 +5,11 @@
 html,
 body {
     width: 100%;
+    /* overflow-x: hidden; */
+}
+body{
     overflow-x: hidden;
 }
-
 #about {
     display: flex;
     flex-direction: column;
@@ -227,7 +229,7 @@ body {
 ========================== */
 
 .marquee-wrapper {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     position: relative;
     display: flex;

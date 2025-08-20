@@ -27,7 +27,7 @@
 .property-container {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 24px;
     width: 100%;
     max-width: 90.56%;
