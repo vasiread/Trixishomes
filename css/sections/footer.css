@@ -207,13 +207,27 @@ a {
 
 }
 
+@media(max-width: 1024px) {
+    .contact-us{
+        max-width: 80%;
+    }
+}
 @media(max-width: 720px) {
     .contact-us div {
         flex-direction: column;
 
     }
 .contact-us{
-    max-width: 100%;
+    max-width: 90%;
+    width: 100%;
+    height: fit-content;
+ }
+.footer-aboveinformation{
+    max-width: 80%;
 }
+.first-column,.second-column,.third-column,.fourth-column{
+   height: 100px;
+   justify-content: space-between;
 
+}
 }

@@ -66,10 +66,13 @@ font-size: clamp(12px, 2vw, 18px);
 
 .rightsidesection-searchbar {
     height: 60px;
-    width: 100%;
+    width: 90%;
     position: relative;
     margin: 10px 0;
 
+}
+#propertiesFoundHeading {
+        font-size: clamp(1.2rem, 2vw, 2.2rem);
 }
 
 .rightsidesection-searchbar button {

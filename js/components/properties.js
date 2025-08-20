@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const slider = document.querySelector('.properties-groups');
 
     let scrollAmount = 0;
-    const slideStep = 350; // Adjust based on card width
 
     // ✅ Property data (dynamic)
     const properties = [
@@ -24,10 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             bhk: { bedroom: 5, washroom: 0, sqrft: 3800 },
             price: 11000000
         },
-
-
-       
-
         {
             img: "assets/images/property10.png",
             info: "For Investment",
@@ -44,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
             bhk: { bedroom: 4, washroom: 4, sqrft: 1850 },
             price: 2800000
         },
-       
         {
             img: "assets/images/property13.png",
             info: "For Investment",
@@ -73,16 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "assets/images/property6.jpg",
             info: "For Sell",
             location: "Al Safa, Dubai",
-            title: "Cavalli couture by Canal",
+            title: "Cavalli couture by Canal",
             bhk: { bedroom: 2, washroom: 0, sqrft: 2200 },
             price: 8000000
         },
-      
-        
         {
             img: "assets/images/property9.jpg",
             info: "For Investment",
-            location: "Palm jumeriah Oasis, Dubai",
+            location: "Palm jumeriah Oasis, Dubai",
             title: "The Beverly House",
             bhk: { bedroom: 3, washroom: 2, sqrft: 2950 },
             price: 45000000
@@ -90,20 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             img: "assets/images/property14.png",
             info: "For Rent",
-            location: " Rashid Yatchs & Marina, Dubai",
+            location: "Rashid Yatchs & Marina, Dubai",
             title: "Baystar by EMAAR",
             bhk: { bedroom: 2, washroom: 1, sqrft: 750 },
             price: 1900000
         }
-
     ];
-
 
     // ✅ Render properties dynamically
     const propertiesList = document.getElementById("propertiesList");
 
     properties.forEach(property => {
-        // ✅ Washroom conditional display like in renderProperties
         let washroomHTML = '';
         if (property.bhk.washroom > 0) {
             washroomHTML = `
@@ -121,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         }
 
-        // ✅ Add full card with BHK block in between title & price
         propertiesList.innerHTML += `
         <div class="individual-property">
             <img src="${property.img}" alt="" id="individualproperty-uniqueimg">
@@ -144,25 +132,42 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
 
-            <p id="dollor-unique" ><span>AED</span> ${property.price.toLocaleString()}</p>
+            <p id="dollor-unique"><span>AED</span> ${property.price.toLocaleString()}</p>
         </div>
     `;
     });
 
+    // ✅ Helper: get dynamic step size
+    function getSlideStep() {
+        const card = document.querySelector('.individual-property');
+        return card ? card.offsetWidth + 20 : 350; // add gap
+    }
 
     // ✅ Slider functionality
     rightArrow.addEventListener('click', () => {
+        const slideStep = getSlideStep();
         const maxScroll = slider.scrollWidth - slider.clientWidth;
+
         if (scrollAmount < maxScroll) {
             scrollAmount += slideStep;
+            if (scrollAmount > maxScroll) scrollAmount = maxScroll;
             slider.style.transform = `translateX(-${scrollAmount}px)`;
         }
     });
 
     leftArrow.addEventListener('click', () => {
+        const slideStep = getSlideStep();
+
         if (scrollAmount > 0) {
             scrollAmount -= slideStep;
+            if (scrollAmount < 0) scrollAmount = 0;
             slider.style.transform = `translateX(-${scrollAmount}px)`;
         }
+    });
+
+    // ✅ On resize: reset position & recalc
+    window.addEventListener('resize', () => {
+        scrollAmount = 0;
+        slider.style.transform = `translateX(0px)`;
     });
 });
