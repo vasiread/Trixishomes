@@ -10,31 +10,31 @@ document.addEventListener("DOMContentLoaded", () => {
             { src: "assets/images/Apartments for sale/city walk.webp", title: "city walk" },
         ],
         "rent-apartments": [
-            { src: "assets/images/Apartment for rent/Blue waters.jpg", title: "Jbr" },
-            { src: "assets/images/Apartment for rent/Business bay.jpg", title: "business bay" },
-            { src: "assets/images/Apartment for rent/City walk.jpg", title: "city walk" },
-            { src: "assets/images/Apartment for rent/Creek harbour.jpg", title: "blue water" },
-            { src: "assets/images/Apartment for rent/Dubai marina .jpg", title: "dubai marina" },
-            { src: "assets/images/Apartment for rent/Marina walk.jpg", title: "creek harbour" },
-            { src: "assets/images/Apartment for rent/Palm west.jpg", title: "palm west" }
+            { src: "assets/images/Apartment for rent/Blue waters.webp", title: "Jbr" },
+            { src: "assets/images/Apartment for rent/Business bay.webp", title: "business bay" },
+            { src: "assets/images/Apartment for rent/City walk.webp", title: "city walk" },
+            { src: "assets/images/Apartment for rent/Creek harbour.webp", title: "blue water" },
+            { src: "assets/images/Apartment for rent/Dubai marina .webp", title: "dubai marina" },
+            { src: "assets/images/Apartment for rent/Marina walk.webp", title: "creek harbour" },
+            { src: "assets/images/Apartment for rent/Palm west.webp", title: "palm west" }
         ],
         "sale-villas": [
-            { src: "assets/images/Villa for sales/arabian ranches_.jpg", title: "arabian ranches" },
-            { src: "assets/images/Villa for sales/Emirates hills_.jpg", title: "emirates hills" },
-            { src: "assets/images/Villa for sales/Hill estates.jpg", title: "hill estates" },
-            { src: "assets/images/Villa for sales/Selvaraa By Emaar.jpg", title: "Selvaraa By Emaar" },
-            { src: "assets/images/Villa for sales/Palm residence.jpg", title: "palm residence" },
-            { src: "assets/images/Villa for sales/Meydan_.jpg", title: "Meydan" },
-            { src: "assets/images/Villa for sales/Palm jumeirah_.jpg", title: "palm jumeirah" }
+            { src: "assets/images/Villa for sales/arabian ranches_.webp", title: "arabian ranches" },
+            { src: "assets/images/Villa for sales/Emirates hills_.webp", title: "emirates hills" },
+            { src: "assets/images/Villa for sales/Hill estates.webp", title: "hill estates" },
+            { src: "assets/images/Villa for sales/Selvaraa By Emaar.webp", title: "Selvaraa By Emaar" },
+            { src: "assets/images/Villa for sales/Palm residence.webp", title: "palm residence" },
+            { src: "assets/images/Villa for sales/Meydan_.webp", title: "Meydan" },
+            { src: "assets/images/Villa for sales/Palm jumeirah_.webp", title: "palm jumeirah" }
         ],
         "rent-villas": [
-            { src: "assets/images/Villa for rent/arabian ranches.jpg", title: "arabian ranches" },
-            { src: "assets/images/Villa for rent/Damac Hills 1.jpg", title: "Damac Hills 1" },
-            { src: "assets/images/Villa for rent/Emirates hills.jpg", title: "emirates hills" },
-            { src: "assets/images/Villa for rent/Nad AI Sheba.jpg", title: "Nad AI Sheba" },
-            { src: "assets/images/Villa for rent/Hill estates_.jpg", title: "Hill estates" },
-            { src: "assets/images/Villa for rent/Meydan_.jpg", title: "Meydan" },
-            { src: "assets/images/Villa for rent/Palm jumeirah_.jpg", title: "palm jumeirah" }
+            { src: "assets/images/Villa for rent/arabian ranches.webp", title: "arabian ranches" },
+            { src: "assets/images/Villa for rent/Damac Hills 1.webp", title: "Damac Hills 1" },
+            { src: "assets/images/Villa for rent/Emirates hills.webp", title: "emirates hills" },
+            { src: "assets/images/Villa for rent/Nad AI Sheba.webp", title: "Nad AI Sheba" },
+            { src: "assets/images/Villa for rent/Hill estates_.webp", title: "Hill estates" },
+            { src: "assets/images/Villa for rent/Meydan_.webp", title: "Meydan" },
+            { src: "assets/images/Villa for rent/Palm jumeirah_.webp", title: "palm jumeirah" }
         ]
     };
 
