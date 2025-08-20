@@ -1,9 +1,18 @@
+import sharp from "sharp";
+
 window.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.getElementById("hanburgerid");
     const navList = document.querySelector(".navlists-header");
     const rightList = document.querySelector(".rightside-nav");
 
     let isMenuOpen = false;
+
+
+
+    sharp("input.jpg")
+        .webp({ quality: 80 })
+        .toFile("output.webp");
+
 
     hamburger.addEventListener("click", () => {
         if (isMenuOpen && navList && rightList) {
