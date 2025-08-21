@@ -111,7 +111,7 @@
     flex-direction: column;
 
     gap: 12px;
-    height: 300px;
+    height: fit-content;
     justify-content: space-evenly;
     min-width: 47.12%;
     width: 100%;

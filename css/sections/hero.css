@@ -7,6 +7,12 @@
     margin-top: 200px;
 
 }
+/* h3::before,
+.profiles-about h3::before,
+.about-header::before {
+    content: "🌐";
+    /* or "\1F310" (unicode for globe) */
+} */
 .rightsidesection-herocategorize li.active {
     border-bottom: 2px solid rgb(51, 50, 50);
     
