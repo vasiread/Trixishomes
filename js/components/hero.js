@@ -84,4 +84,36 @@ window.addEventListener("DOMContentLoaded", () => {
             rightList.style.display = 'none';
         }
     });
+
+
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+            const res = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            });
+
+            if (res.ok) {
+                note.style.color = 'green';
+                note.textContent = '✅ Thank you! Your details have been submitted successfully. We will contact you shortly.';
+                form.reset();
+            } else {
+                note.style.color = 'red';
+                note.textContent = '⚠️ Something went wrong. Please try again later.';
+            }
+        } catch (err) {
+            note.style.color = 'red';
+            note.textContent = '⚠️ Network error. Please check your connection and try again.';
+        }
+    });
+
 });

@@ -444,27 +444,42 @@
                     </p>
 
                     <!-- START: contact form -->
-                    <form id="contactForm" class="contact-us" novalidate>
-                        <div class="first-column">
-                            <input type="text" name="name" placeholder="Name *" required>
-                            <input type="text" name="contact" placeholder="Preferred Contact (call/whatsapp/email) *"
-                                required>
-                        </div>
-                        <div class="second-column">
-                            <input type="email" name="email" placeholder="Email *" required>
-                            <input type="tel" name="phone" placeholder="Phone *" required>
-                        </div>
-                        <div class="second-column">
-                            <input type="text" name="budget" placeholder="Budget (AED) *" required>
-                        </div>
-                        <div class="third-column">
-                            <input type="text" name="message" placeholder="How soon looking to buy ">
-                        </div>
-                        <div class="fourth-column">
-                            <button type="submit" id="bookBtn">Book a Call</button>
-                            <p id="formNote" aria-live="polite" style="margin-top:8px;"></p>
-                        </div>
-                    </form>
+                <!-- ✅ Netlify contact form -->
+                <form name="contact" id="contactForm" class="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                    novalidate>
+                
+                    <!-- Required hidden input -->
+                    <input type="hidden" name="form-name" value="contact" />
+                
+                    <!-- Honeypot (spam protection) -->
+                    <p style="display:none;">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                
+                    <div class="first-column">
+                        <input type="text" name="name" placeholder="Name *" required>
+                        <input type="text" name="contact" placeholder="Preferred Contact (call/whatsapp/email) *" required>
+                    </div>
+                
+                    <div class="second-column">
+                        <input type="email" name="email" placeholder="Email *" required>
+                        <input type="tel" name="phone" placeholder="Phone *" required>
+                    </div>
+                
+                    <div class="second-column">
+                        <input type="text" name="budget" placeholder="Budget (AED) *" required>
+                    </div>
+                
+                    <div class="third-column">
+                        <input type="text" name="message" placeholder="How soon looking to buy">
+                    </div>
+                
+                    <div class="fourth-column">
+                        <button type="submit" id="bookBtn">Book a Call</button>
+                        <p id="formNote" aria-live="polite" style="margin-top:8px; font-weight:500;"></p>
+                    </div>
+                </form>
+
                     <!-- END: contact form -->
                 </div>
             </div>
