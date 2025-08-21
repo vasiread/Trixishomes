@@ -89,10 +89,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById('contactForm');
     const note = document.getElementById('formNote');
 
-    if (!form) return;
-
     form.addEventListener('submit', async function (e) {
         e.preventDefault();
+
         const formData = new FormData(form);
 
         try {
@@ -103,17 +102,16 @@ window.addEventListener("DOMContentLoaded", () => {
             });
 
             if (res.ok) {
-                note.style.color = 'green';
-                note.textContent = '✅ Thank you! Your details have been submitted successfully. We will contact you shortly.';
+                note.textContent = "✅ Thank you! Your details have been submitted successfully.";
+                note.style.color = "green";
                 form.reset();
             } else {
-                note.style.color = 'red';
-                note.textContent = '⚠️ Something went wrong. Please try again later.';
+                note.textContent = "❌ Something went wrong. Please try again.";
+                note.style.color = "red";
             }
-        } catch (err) {
-            note.style.color = 'red';
-            note.textContent = '⚠️ Network error. Please check your connection and try again.';
+        } catch (error) {
+            note.textContent = "⚠️ Network error. Please try again later.";
+            note.style.color = "red";
         }
     });
-
 });
