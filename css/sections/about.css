@@ -227,21 +227,17 @@ body{
 /* =======================
    Marquee Animation
 ========================== */
-
 .marquee-wrapper {
-    /* overflow: hidden; */
     width: 100%;
-    position: relative;
-    display: flex;
-    gap: 2rem;
+    overflow: hidden;
+     display: flex;
 }
 
 .profiles-marquee {
     display: flex;
     gap: 2rem;
-    animation: scroll-marquee 15s linear infinite;
     width: max-content;
-}
+ }
  
 @keyframes scroll-marquee {
     from {

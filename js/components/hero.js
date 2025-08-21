@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
         } else {
             hamburger.src = "/public/assets/images/close_small.png";
             hamburger.style.right = "3%";
-            hamburger.style.top = "3%";
+            hamburger.style.top = "5%";
             hamburger.style.width = "13px";
             hamburger.style.opacity = 0.8;
             navList.style.display = "flex";
