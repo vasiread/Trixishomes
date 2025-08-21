@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    document.getElementById("logoimg")?.addEventListener("click", function () {
+    document.querySelector("#logoimg img")?.addEventListener("click", function () {
         const section = document.getElementById("herosection");
         if (!section) return;
         const yOffset = -210;
