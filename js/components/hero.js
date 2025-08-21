@@ -9,14 +9,14 @@ window.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", () => {
         if (isMenuOpen) {
             hamburger.src = "/public/assets/images/hanburger.png";
-            hamburger.style.right = "3%";
-            hamburger.style.top = "30%";
+            hamburger.style.right = "5%";
+            hamburger.style.top = "40%";
             navList.style.display = "none";
             rightList.style.display = "none";
         } else {
             hamburger.src = "/public/assets/images/close_small.png";
-            hamburger.style.right = "3%";
-            hamburger.style.top = "5%";
+            hamburger.style.right = "5%";
+            hamburger.style.top = "7%";
             hamburger.style.width = "13px";
             hamburger.style.opacity = 0.8;
             navList.style.display = "flex";

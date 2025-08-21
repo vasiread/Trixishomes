@@ -18,7 +18,7 @@
 #hanburgerid {
     position: absolute;
     right: 3%;
-    top: 30%;
+    top: 34%;
     cursor: pointer;
     display: none;
 
@@ -97,6 +97,7 @@
 .leftside-nav div li {
     opacity: 60%;
     cursor: pointer;
+    text-align: center;
 }
 
 .rightside-nav {
@@ -115,10 +116,12 @@
 }
 .rightside-nav img{
     cursor:pointer;
+    text-align: center;
 }
 .rightside-nav p {
     color: rgba(33, 62, 77, 1);
     font-family: "Geist";
+    text-align: center;
 
 }
 
@@ -338,7 +341,6 @@
 
     #hanburgerid {
         display: flex;
-        top: 2.7rem;
-        right: 1rem;
+         right: 1rem;
     }
 }
