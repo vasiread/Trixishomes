@@ -90,11 +90,11 @@
     border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 8px;
     height: 50px;
-    width: 220px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+ }
 
 .img-wrapper {
     position: relative;
@@ -147,7 +147,8 @@ font-size: clamp(16px, 1.25vw, 24px);    /* line-height: 43.2px; */
     list-style: none;
     font-family: "Geist";
     font-weight: 300;
-    font-size: clamp(12px, 1.5vw, 15px);
+    width: 300px;   
+     font-size: clamp(12px, 1.5vw, 15px);
     /* min 12px, scales with viewport, max 18px */
     color: rgba(0, 0, 0, 1);
     margin: 1rem 9.5px;
@@ -156,16 +157,18 @@ font-size: clamp(16px, 1.25vw, 24px);    /* line-height: 43.2px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+ }
 
 /* Tablet: stack 2 per row */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .categories-listitems {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
-
+.individual-property h3{
+    font-size: 20px;
+}
     .categories-firstgroup,
     .categories-secondgroup,
     .categories-thirdgroup,

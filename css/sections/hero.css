@@ -7,27 +7,26 @@
     margin-top: 200px;
 
 }
-/* h3::before,
-.profiles-about h3::before,
-.about-header::before {
-    content: "🌐";
-    /* or "\1F310" (unicode for globe) */
-} */
+
 .rightsidesection-herocategorize li.active {
     border-bottom: 2px solid rgb(51, 50, 50);
-    
+
 }
-#categoryList{
-    display: flex;
-    justify-content: space-between;
+
+#categoryList {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     max-width: 100%;
     width: 100%;
 }
+
 #rightside-description-hero {
     margin: 0;
     color: rgba(0, 0, 0, 1);
     font-weight: 300;
-font-size: clamp(12px, 2vw, 18px);
+    font-size: clamp(12px, 2vw, 18px);
     font-family: "Geist";
     margin-top: 10px;
 
@@ -55,7 +54,7 @@ font-size: clamp(12px, 2vw, 18px);
     gap: 6.7%;
     width: 100%;
     margin-top: 100px;
-    
+
 
 
 }
@@ -66,7 +65,8 @@ font-size: clamp(12px, 2vw, 18px);
     font-size: 12px;
     list-style: none;
     color: rgba(33, 62, 77, 1);
-    cursor:pointer;
+    cursor: pointer;
+    height: 20px;
 
 }
 
@@ -77,8 +77,9 @@ font-size: clamp(12px, 2vw, 18px);
     margin: 10px 0;
 
 }
+
 #propertiesFoundHeading {
-        font-size: clamp(1.2rem, 2vw, 2.2rem);
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
 }
 
 .rightsidesection-searchbar button {
@@ -91,7 +92,7 @@ font-size: clamp(12px, 2vw, 18px);
     border: none;
     outline: none;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
@@ -101,11 +102,11 @@ font-size: clamp(12px, 2vw, 18px);
     border: none;
     border-radius: 8px;
     background-color: rgba(248, 248, 248, 1);
-        padding: 16px 20px;
-        font-family: "Geist";
-        color:rgb(71, 70, 70);
-        font-size: 1rem;
-        position:relative;
+    padding: 16px 20px;
+    font-family: "Geist";
+    color: rgb(71, 70, 70);
+    font-size: 1rem;
+    position: relative;
 
 }
 
@@ -186,7 +187,7 @@ font-size: clamp(12px, 2vw, 18px);
     font-family: "Bellaza";
     /* font-size: 64px; */
     width: 100%;
-font-size: clamp(24px, 5vw, 64px);
+    font-size: clamp(24px, 5vw, 64px);
 
 }
 
@@ -215,5 +216,10 @@ font-size: clamp(24px, 5vw, 64px);
 
     .rightsidesection-hero {
         max-width: 100%;
+    }
+
+    #categoryList {
+        grid-template-columns: repeat(2, 1fr);
+
     }
 }
