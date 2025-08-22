@@ -70,7 +70,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Handle resizing
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1200) {
             navList.style.display = 'flex';
             rightList.style.display = 'flex';
             hamburger.src = "/public/assets/images/hanburger.png";
@@ -84,7 +84,6 @@ window.addEventListener("DOMContentLoaded", () => {
             rightList.style.display = 'none';
         }
     });
-
 
     const form = document.getElementById('contactForm');
     const note = document.getElementById('formNote');
@@ -114,4 +113,5 @@ window.addEventListener("DOMContentLoaded", () => {
             note.style.color = "red";
         }
     });
+
 });

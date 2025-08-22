@@ -445,16 +445,8 @@
 
                     <!-- START: contact form -->
             <!-- ✅ Netlify contact form -->
-            <form name="contact" id="contactForm" class="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-                novalidate>
-            
-                <!-- Required hidden input -->
+            <form name="contact" id="contactForm" class="contact-us" method="POST" novalidate>
                 <input type="hidden" name="form-name" value="contact" />
-            
-                <!-- Honeypot (spam protection) -->
-                <p style="display:none;">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
             
                 <div class="first-column">
                     <input type="text" name="name" placeholder="Name *" required>
@@ -479,6 +471,8 @@
                     <p id="formNote" aria-live="polite" style="margin-top:8px; color:green; font-weight:500;"></p>
                 </div>
             </form>
+
+
 
 
                     <!-- END: contact form -->
