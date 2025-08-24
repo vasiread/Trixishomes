@@ -210,7 +210,11 @@
         will-change: transform;
     }
 
-   
+   #testimonials {
+       max-width: 85.44%;
+       width: 100%;
+       margin: 0 5.98%;
+   }
 
     .testimonial-videosection {
         max-width: 50%;
