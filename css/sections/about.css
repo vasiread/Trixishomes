@@ -173,6 +173,7 @@ body{
     flex-direction: column;
     gap: 65px;
     animation: fadeInUp 0.8s ease-out forwards;
+    width: 100%;
 }
 
 .profiles-about h3 {

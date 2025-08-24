@@ -275,8 +275,7 @@
 @media (max-width: 600px) {
 
     #header {
-        width: 100%;
-        max-width: 100%;
+       
         padding: 1rem;
         /* balanced padding */
         flex-direction: column;

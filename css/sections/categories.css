@@ -19,17 +19,13 @@
     max-width: 100%;
     
 }
-
 .categories-list {
     display: grid;
-    
+    grid-template-columns: repeat(4, minmax(200px, 280px));
+    gap: 30px;
     justify-content: center;
-    gap: 3.8%;
-    width: 100%;
-    grid-template-columns: repeat(4,1fr);
-
+    width: auto;
 }
-
 #categories-header {
     margin: 0;
     font-family: "Belleza";
