@@ -77,9 +77,11 @@
     width: 100%;
     height: 300px;
     background-image: url('/public/assets/images/privacy-banner.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover;     /* makes sure it fills */
+    background-position: center; /* keeps it centered */
+    background-repeat: no-repeat; /* avoids tiling */
 }
+
 
         /* Responsive adjustments */
         @media (max-width: 600px) {
