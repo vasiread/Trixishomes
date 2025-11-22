@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('sections/header.css');
 @import url('sections/hero.css');
 @import url('sections/propertyfound.css');
@@ -11,13 +12,168 @@
 @import url('sections/footer.css');
 
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
-.parent-container{
+.blogbanner {
+    margin: 0;
+    padding: 0;
+    height: 405px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    margin: 80px 0;
+}
+
+.blogbanner img {
+    width: 100%;
+    margin: 0;
+    height: 405px;
+    object-fit: fill;
+}
+
+#load-more {
+    width: 12.08%;
+}
+
+.blogsubgrids {
+    max-width: 63.75%;
+    width: 100%;
+    margin: 0 18.12%;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 2%;
+    height: fit-content;
+
+}
+
+.blogsubgrids div img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+
+
+#blog-grid-date {
+    height: 30px;
+    border-radius: 40px;
+    background-color: #02312F1A;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 0.9rem;
+    margin-bottom: 12px;
+
+
+
+
+}
+
+#blog-grid-date p {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+    color: #02312F;
+}
+
+#blog-header {
+    font-family: "Poppins";
+    font-size: 24px;
+    color: #02312F;
+
+}
+
+#blog-description {
+    color: #525B5B;
+    font-size: 1rem;
+    font-weight: 400px;
+}
+
+.blogbanner {
+    position: relative;
+    text-align: center;
+}
+
+.blogbanner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: "Belleza";
+    font-weight: 400;
+    font-size: 5rem;
+    color: white;
+}
+
+#load-more {
+    height: 63px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #02312F;
+    border: 1px solid #525B5B;
+    width: 180px;
+    cursor: pointer;
+}
+
+#load-more p {
+    font-weight: 500;
+    font-family: "Poppins";
+    font-size: 18px;
+
+}
+
+.rightcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rightcontent .rightcontent-buttons button:first-child,
+.rightcontent .rightcontent-buttons button:last-child {
+    border-radius: 2rem;
+    background-color: #213E4D;
+    /* padding: 1rem 2rem; */
+    height: 63px;
+    width: 171px;
+    outline: none;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.rightcontent .rightcontent-buttons button:last-child {
+    border: 1px solid #fff;
+    background-color: transparent;
+    width: 277px;
+
+}
+
+.blogsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 80px;
+    margin: 160px 0;
+
+}
+
+.parent-container {
     /* margin: 0;
     padding: 0;
     box-sizing: border-box; */
@@ -26,4 +182,168 @@
     gap: 12rem;
     margin-left: -8px;
     /* overflow: scroll; */
+}
+
+.blogsubgrids div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blogfoot-img {
+    width: 100%;
+    height: 892px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogfoot-img img {
+    width: 100%;
+}
+
+.blogfoot-content {
+    position: absolute;
+    top: 0;
+    /* left:18.12%; */
+    top: 15%;
+    max-width: 81.75%;
+    display: flex;
+    gap: 6.3%;
+}
+
+.blogfoot-content .leftcontent p {
+    color: #fff;
+    font-size: 72px;
+    line-height: 86px;
+    font-family: "Belleza";
+
+
+}
+
+.blogdetailssection-start {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    /* height: fit-content; */
+}
+
+.blogdetailssection-first {
+    display: flex;
+    flex-direction: column;
+    max-width: 52.86%;
+    width: 100%;
+    /* height: fit-content; */
+    gap: 80px;
+}
+
+.blogdetailssection-first p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+
+.blogdetailssection-first img {
+    height: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+.blogdetailssectionlists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 52.86%;
+    width: 100%;
+}
+
+.bloglists {
+    list-style: disc;
+}
+
+.bloglists h2 {
+    margin: 30px 0;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 32px;
+
+}
+
+.blogdetailssectionlists li {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    margin: 0 0.9rem;
+}
+.bloglists img{
+    max-width: 100%;
+    width: 100%;
+    margin: 30px 0;
+}
+.blogfoot-content .rightcontent p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.blogwholesection {
+    /* display: none; */
+}
+
+.blogdetailssection-banner {
+    background-color: #213E4D;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blogdetailsection {
+    margin-top: 105px;
+}
+
+.blogdetailssection-banner .blogdetailbanner-content {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+
+}
+.blog-card{
+    cursor: pointer;
+}
+.blogdetailssection-banner .blogdetailbanner-content p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+
+
+}
+
+.blogdetailssection-banner .blogdetailbanner-content h3 {
+    font-family: "Belleza";
+    font-size: clamp(32px, 4vw + 1rem, 72px);
+    font-weight: 400;
+    color: #fff;
+    max-width: 60.30%;
+    width: 100%;
+
 }

@@ -70,7 +70,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Handle resizing
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 1200) {
+        if (window.innerWidth > 1450) {
             navList.style.display = 'flex';
             rightList.style.display = 'flex';
             hamburger.src = "/public/assets/images/hanburger.png";

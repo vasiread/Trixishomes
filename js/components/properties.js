@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let scrollAmount = 0;
 
-    // ✅ Property data (dynamic)
+     
     const properties = [
         {
             img: "/public/assets/images/property1.png",
@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
-    // ✅ Render properties dynamically
     const propertiesList = document.getElementById("propertiesList");
 
     properties.forEach(property => {
